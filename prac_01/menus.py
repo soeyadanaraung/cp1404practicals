@@ -12,5 +12,5 @@ while choice != "Q":
         print("Invalid choice")
     print(menu)
     choice = input(">>> ").upper()
-print("Finished.")
+print("Finished!")
 

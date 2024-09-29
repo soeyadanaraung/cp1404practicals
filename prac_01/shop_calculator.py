@@ -9,4 +9,4 @@ for i in range(items):
     total_price += item_price
 if total_price > 100:
     total_price = total_price - (total_price * 0.1)
-print(f"Total price for {items} items is ${total_price:.2f}")
+print(f"Total price for {items} items is ${total_price: .2f}")

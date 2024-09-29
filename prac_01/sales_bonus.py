@@ -12,4 +12,4 @@ while sales >= 0:
         bonus = sales * 0.15
     print(f"Your bonus is ${bonus}.")
     sales = sales = float(input("Enter sales: $"))
-print("No bonus calculated.")
+print("No bonus calculated.Sorry!")

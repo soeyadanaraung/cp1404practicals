@@ -116,6 +116,7 @@ display number of gifts % number of students
 #     for j in range(2, 10, 3):
 #         print(i, "-", j+i)
 
+
 # 1-3
 # 1-6
 # 1-10
