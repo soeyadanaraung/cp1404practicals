@@ -1,7 +1,5 @@
 """
 Emails
-Estimate: 20 minutes
-Actual:   40 minutes
 """
 
 email_to_name = {}
@@ -25,8 +23,6 @@ def main():
 def extract_name_from_email(email):
     """Extract name from email address"""
     full_name = email.split('@')[0]
-    name_part = full_name.split('.')
-    return " ".join(name_part).title()
 
 
 main()
