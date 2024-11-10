@@ -5,6 +5,11 @@ def main():
     guitars =  load_file()
     display_guitars(guitars)
 
+    # Sort guitars by year and display them
+    guitars.sort()
+    for guitar in guitars:
+        print(guitar)
+
     name = input("Enter a new guitar name or blank to stop: ")
     while name:
         year = int(input("Enter Year: "))
