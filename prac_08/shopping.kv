@@ -1,0 +1,68 @@
+#:import MainLayout classes.MainLayout
+
+<MainLayout>:
+    orientation: 'vertical'
+    spacing: 10
+    padding: 10
+
+    # List of items with prices
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint_y: 0.8
+        spacing: 5
+
+        # Adding each item row with price and name
+        Button:
+            text: "Cheese $12.50"
+            font_size: 18
+            on_release: root.add_to_total(12.50)
+            background_normal: ''
+            background_color: 0.4, 0.4, 0.4, 1
+
+        Button:
+            text: "Laptop $912.95"
+            font_size: 18
+            on_release: root.add_to_total(912.95)
+            background_normal: ''
+            background_color: 0.4, 0.4, 0.4, 1
+
+        Button:
+            text: "Plant $4.75"
+            font_size: 18
+            on_release: root.add_to_total(4.75)
+            background_normal: ''
+            background_color: 0.4, 0.4, 0.4, 1
+
+        Button:
+            text: "Coffee Machine $2,300.00"
+            font_size: 18
+            on_release: root.add_to_total(2300.00)
+            background_normal: ''
+            background_color: 0.4, 0.4, 0.4, 1
+
+        Button:
+            text: "Guitar $4,399.95"
+            font_size: 18
+            on_release: root.add_to_total(4399.95)
+            background_normal: ''
+            background_color: 0.4, 0.4, 0.4, 1
+
+    # Bottom section with total price display and reset button
+    BoxLayout:
+        size_hint_y: 0.2
+        spacing: 10
+
+        Label:
+            text: "Total price: ${:.2f}".format(root.total_price)
+            font_size: 18
+            color: 1, 1, 1, 1
+
+        Button:
+            text: "Reset"
+            font_size: 18
+            on_release: root.reset_total()
+            background_normal: ''
+            background_color: 0.3, 0.5, 0.2, 1
+
+
+
